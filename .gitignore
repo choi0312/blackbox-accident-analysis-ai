@@ -1,0 +1,16 @@
+# macOS / Python
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+
+# Large model artifacts are distributed separately from the source repository.
+*.safetensors
+*.pth
+*.pt
+
+# Runtime outputs
+outputs/
+submission.csv
+*.log

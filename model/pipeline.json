@@ -1,0 +1,8 @@
+{
+  "name": "multimodal_spatiotemporal_evidence_fusion",
+  "stage1": "Qwen-only recall-oriented threshold 0.46 with 14 uniform frames",
+  "stage2": "YOLOPv2 and optical-flow geometry with a dual-SimpleTAD contradiction guard",
+  "stage3": "Independent GPL FlexiNet and RAFT motion pipeline with compact fixed heads",
+  "strategy": "Combine frozen multimodal, road-perception, anomaly, and motion representations with explicit geometric and temporal constraints",
+  "weights_frozen": true
+}

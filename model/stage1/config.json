@@ -1,0 +1,12 @@
+{
+  "backend": "qwen_only",
+  "model_path": "../mllm_weights",
+  "sample_frames": 14,
+  "threshold": 0.46,
+  "full_view_max_side": 640,
+  "center_crop_max_side": 384,
+  "decision": "mean_log_odds_two_answer_orders",
+  "frame_selection": "uniform_over_all_decoded_frames",
+  "dct_enabled": false,
+  "guard_enabled": false
+}

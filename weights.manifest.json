@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "note": "Large checkpoints are intentionally excluded from Git. Restore the exact files before inference and run scripts/verify_weights.py.",
+  "files": [
+    {
+      "path": "model/mllm_weights/model-00001-of-00002.safetensors",
+      "bytes": 5366863440,
+      "sha256": "39c3e38447b0fe8b94c95a01a6b3f1171f1db2a4a6e03ccf55e3b6c0c5f07a44",
+      "source": "https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct-FP8",
+      "revision": "fefbb44cbcce8d1bb7e20b920b94f77432b3446d",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "model/mllm_weights/model-00002-of-00002.safetensors",
+      "bytes": 654372016,
+      "sha256": "ece22ccb44f97514a08b5bf10513530e0928f2e9bc93c7dc0efe8e18796fe4d9",
+      "source": "https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct-FP8",
+      "revision": "fefbb44cbcce8d1bb7e20b920b94f77432b3446d",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "model/stage2/yolopv2.pt",
+      "bytes": 156380200,
+      "sha256": "f2a8c8374203ae3e67ff9c184e931f763957de92a993b23269e4e721627f1f8c",
+      "source": "https://github.com/CAIC-AD/YOLOPv2/releases/download/V0.0.1/yolopv2.pt",
+      "revision": "9388c6aa55f3bf5a878679a1338bb090cff6a256",
+      "license": "MIT"
+    },
+    {
+      "path": "model/stage2/simpletad_dada.pth",
+      "bytes": 43792866,
+      "sha256": "8a9a912b631479625524d8a1a14c5bd3f8adfafce87c9f2a27aa735ba4e55bbe",
+      "source": "https://huggingface.co/tue-mps/simple-tad",
+      "revision": "a119df6fd334c8bdfd18ae6bed31e4b4b60cac74",
+      "license": "CC-BY-NC-4.0"
+    },
+    {
+      "path": "model/stage2/simpletad_dota.pth",
+      "bytes": 43793762,
+      "sha256": "1a80add75ba7341f519c7bff1b86cec1e405bcb0c364cf32e77f6668467f1619",
+      "source": "https://huggingface.co/tue-mps/simple-tad",
+      "revision": "a119df6fd334c8bdfd18ae6bed31e4b4b60cac74",
+      "license": "CC-BY-NC-4.0"
+    },
+    {
+      "path": "model/stage3/raft_large.pth",
+      "bytes": 21106607,
+      "sha256": "b5c7076664d2e53ef175e06619f44a514e10fbba58731d6956536c8c48c42dd0",
+      "source": "https://download.pytorch.org/models/raft_large_C_T_SKHT_K_V2-b5c70766.pth",
+      "revision": null,
+      "license": "BSD-3-Clause"
+    },
+    {
+      "path": "model/stage3/flexinet_kitti.pth",
+      "bytes": 28165529,
+      "sha256": "cb30f92dcf95ffd0419cf1a9dd10c60339eb340b6041b50bd99c669fd9810828",
+      "source": "https://github.com/Geekgineer/FlexiNet",
+      "revision": "e25127f6912733213d46881d1139c9632e2f0114",
+      "license": "GPL-3.0-only"
+    }
+  ]
+}
+

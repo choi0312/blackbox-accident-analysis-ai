@@ -1,0 +1,13 @@
+{
+  "name": "YOLOPv2",
+  "source_repository": "https://github.com/CAIC-AD/YOLOPv2",
+  "download_url": "https://github.com/CAIC-AD/YOLOPv2/releases/download/V0.0.1/yolopv2.pt",
+  "sha256": "f2a8c8374203ae3e67ff9c184e931f763957de92a993b23269e4e721627f1f8c",
+  "size_bytes": 156380200,
+  "license": "MIT (repository/model release; pretraining data rights remain separate)",
+  "trained_on": "BDD100K; official model release",
+  "download_date": "2026-08-31",
+  "additional_training": "none",
+  "source_commit": "9388c6aa55f3bf5a878679a1338bb090cff6a256",
+  "license_notice_file": "YOLOPv2_LICENSE.txt"
+}

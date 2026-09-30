@@ -1,0 +1,46 @@
+{
+  "stage": 3,
+  "date": "2026-09-09",
+  "entrypoint": "worker.py -> gpl_program.py -> motion_v2.py",
+  "frozen_head": "motion_v2_head.json",
+  "geometry_source": "motion_geometry.py",
+  "flow_config": {
+    "backend": "independent_gpl_program",
+    "implementation": "motion_v2",
+    "accel": "Frozen FlexiNet raw 0.1s/0.5s frame spacing, 1.5s/3s derivative smoothing, reflection averaging, symmetric moving-class heads with frozen physical STOP probability",
+    "steer": "Frozen YOLOPv2 lane curvature + RAFT rotation, reflection averaging, symmetric fixed head",
+    "sample_period": 0.1,
+    "submission_stride": 1
+  },
+  "checkpoints": [
+    {
+      "file": "raft_large.pth",
+      "source": "https://download.pytorch.org/models/raft_large_C_T_SKHT_K_V2-b5c70766.pth",
+      "license": "BSD-3-Clause",
+      "bytes": 21106607,
+      "sha256": "b5c7076664d2e53ef175e06619f44a514e10fbba58731d6956536c8c48c42dd0"
+    },
+    {
+      "file": "flexinet_kitti.pth",
+      "source": "https://github.com/Geekgineer/FlexiNet",
+      "license": "GPL-3.0-only",
+      "bytes": 28165529,
+      "sha256": "cb30f92dcf95ffd0419cf1a9dd10c60339eb340b6041b50bd99c669fd9810828"
+    },
+    {
+      "file": "../stage2/yolopv2.pt",
+      "source": "https://github.com/CAIC-AD/YOLOPv2",
+      "license": "MIT",
+      "bytes": 156380200,
+      "sha256": "f2a8c8374203ae3e67ff9c184e931f763957de92a993b23269e4e721627f1f8c"
+    }
+  ],
+  "compliance": {
+    "offline": true,
+    "parameters_frozen": true,
+    "inference_updates": false,
+    "cross_video_statistics": false,
+    "output": "Every decoded frame, sample_index 0..N-1; hidden data are already 10Hz irrespective of metadata",
+    "licenses": "Standalone GPL-3.0-only motion program, MIT YOLOPv2 source/checkpoint attribution, BSD RAFT/torchvision; separate CSV IPC from other stages."
+  }
+}

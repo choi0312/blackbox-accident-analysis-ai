@@ -1,0 +1,8 @@
+{
+  "backend": "independent_gpl_program",
+  "implementation": "motion_v2",
+  "accel": "Frozen FlexiNet raw 0.1s/0.5s frame spacing, 1.5s/3s derivative smoothing, reflection averaging, symmetric moving-class heads with frozen physical STOP probability",
+  "steer": "Frozen YOLOPv2 lane curvature + RAFT rotation, reflection averaging, symmetric fixed head",
+  "sample_period": 0.1,
+  "submission_stride": 1
+}
